@@ -1,0 +1,7 @@
+<h1>All vehicles and counts</h1>
+
+<ul>
+{% for v in vehicles %}
+    <li>{{ v.type }} - ({{ v.number_owned }})</li>
+{% endfor %}
+</ul>
