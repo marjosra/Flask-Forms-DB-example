@@ -71,8 +71,8 @@ def letters_result():
         for ch in phrase:
             if ch == "e":
                 total_number += 1
-        return "There were {} occurrences of the letter e in the entered phrase".format(total_number)
-        # Challenge: how would you change this to say "occurrence" in the case there's only 1 'e'?
+        return "There were {} occurrence(s) of the letter e in the entered phrase".format(total_number)
+
     return "Nothing was submitted yet... <a href='http://localhost:5000/form2'>Go submit something</a>"
 
 
