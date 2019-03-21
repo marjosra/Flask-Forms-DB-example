@@ -58,10 +58,7 @@ def see_vehicles():
 
 @app.route('/form2')
 def form2():
-    return """<form action="http://localhost:5000/letter" method='GET'>
-    <input type="text" name="phrase"><br>
-    <input type="submit" value="Submit">
-    """
+    return render_template('form2.html')
 
 @app.route('/letter',methods=["GET"])
 def letters_result():
@@ -75,6 +72,9 @@ def letters_result():
 
     return "Nothing was submitted yet... <a href='http://localhost:5000/form2'>Go submit something</a>"
 
+@app.route('/form3')
+def form3():
+    return render_template('form3.html')
 
 if __name__ == "__main__":
     db.create_all()
